@@ -23,4 +23,38 @@ public class AutomationExercisePage {
 
     @FindBy(xpath = "//*[text()='Enter Account Information']")
     public WebElement enterAccountInformationElement;
+
+    @FindBy(id = "id_gender1")
+    public WebElement genderMrElementi;
+
+    @FindBy(id="password")
+    public WebElement password;
+    @FindBy(id="newsletter")
+    public WebElement checkbox1;
+    @FindBy(id="optin")
+    public WebElement checkbox2;
+    @FindBy(name="first_name")
+    public WebElement firstname;
+    @FindBy(xpath = "//button[@data-qa='create-account']")
+    public WebElement createAccountButton;
+
+    @FindBy(xpath = "//*[text()='Account Created!']")
+    public WebElement accountCreatedText;
+
+    @FindBy(xpath = "//*[text()='Continue']")
+    public WebElement continueButton;
+
+    @FindBy(xpath = "(//li)[10]")
+    public WebElement loggedInUsernameText;
+    @FindBy(xpath = "//*[text()=' Delete Account']")
+    public WebElement deleteAccount;
+
+    @FindBy(xpath = "//*[text()='Account Deleted!']")
+    public WebElement accountDeletedText;
+
+    @FindBy(id = "dismiss-button")
+    public WebElement advCloseButon;
+
+   // @FindBy(id="aswift_2")
+   // public WebElement reklamIframe;
 }
