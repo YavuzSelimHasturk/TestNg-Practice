@@ -52,9 +52,18 @@ public class AutomationExercisePage {
     @FindBy(xpath = "//*[text()='Account Deleted!']")
     public WebElement accountDeletedText;
 
-    @FindBy(id = "dismiss-button")
+    @FindBy(xpath= "//*[@id='dismiss-button']")
     public WebElement advCloseButon;
 
-   // @FindBy(id="aswift_2")
-   // public WebElement reklamIframe;
+    @FindBy(xpath = "//*[@aria-label='Close ad']")
+    public WebElement reklamCloseButon;
+
+    @FindBy(id = "ad_position_box")
+    public WebElement googleAds;
+
+    @FindBy(id="aswift_1")
+    public WebElement iframe1;
+    @FindBy(id = "ad_iframe")
+    public WebElement iframe2;
+
 }

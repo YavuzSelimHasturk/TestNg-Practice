@@ -1,6 +1,7 @@
 package tests.automationExerciseTests;
 
 import com.github.javafaker.Faker;
+import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
 import org.testng.Assert;
@@ -9,6 +10,8 @@ import pages.AutomationExercisePage;
 import utilities.ConfigReader;
 import utilities.Driver;
 import utilities.ReusableMethods;
+
+import java.util.List;
 
 public class C01_TestCase_1 {
     //Test Case 1: Register User
@@ -78,24 +81,24 @@ public class C01_TestCase_1 {
         //14. Verify that 'ACCOUNT CREATED!' is visible
         Assert.assertTrue(automationExercisePage.accountCreatedText.isDisplayed());
 
-      //  for (WebElement each: automationExercisePage.reklamIframe
-     //        ) {               }
-
         //15. Click 'Continue' button
         automationExercisePage.continueButton.click();
+
         //16. Verify that 'Logged in as username' is visible
         Assert.assertTrue(automationExercisePage.loggedInUsernameText.isDisplayed());
-    }
-    @Test(priority = 4)
-    public void deleteTest(){
-        //17. Click 'Delete Account' button
-        automationExercisePage.deleteAccount.click();
+        }
 
-        //18. Verify that 'ACCOUNT DELETED!' is visible and click 'Continue' button
-        Assert.assertTrue(automationExercisePage.accountDeletedText.isDisplayed());
+        @Test(priority = 4)
+        public void deleteTest () {
+            //17. Click 'Delete Account' button
+            automationExercisePage.deleteAccount.click();
 
-        automationExercisePage.continueButton.click();
+            //18. Verify that 'ACCOUNT DELETED!' is visible and click 'Continue' button
+            Assert.assertTrue(automationExercisePage.accountDeletedText.isDisplayed());
 
-        Driver.closeDriver();
-    }
+            automationExercisePage.continueButton.click();
+
+            Driver.closeDriver();
+        }
 }
+

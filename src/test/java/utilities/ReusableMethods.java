@@ -3,6 +3,8 @@ import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.*;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.*;
+import pages.AutomationExercisePage;
+
 import java.io.File;
 import java.io.IOException;
 import java.text.SimpleDateFormat;
@@ -17,7 +19,7 @@ public class ReusableMethods {
     public static String getScreenshot(String name) throws IOException {
 
         // naming the screenshot with the current date to avoid duplication
-        String date = new SimpleDateFormat("yyyyMMddhhmmss").format(new Date());
+        String date = new SimpleDateFormat("yyyyMMdd-hhmmss").format(new Date());
 
         // TakesScreenshot is an interface of selenium that takes the screenshot
         TakesScreenshot ts = (TakesScreenshot) Driver.getDriver();
@@ -138,5 +140,18 @@ public class ReusableMethods {
             }
         });
         return element;
+    }
+
+    public static void googleAds() {
+        AutomationExercisePage automationExercisePage=new AutomationExercisePage();
+        if (automationExercisePage.iframe1.isDisplayed()){
+            Driver.getDriver().switchTo().frame(automationExercisePage.iframe1);
+
+            if (automationExercisePage.iframe2.isDisplayed()){
+                Driver.getDriver().switchTo().frame(automationExercisePage.iframe2);
+                automationExercisePage.advCloseButon.click();
+                Driver.getDriver().switchTo().defaultContent();
+            }
+        }
     }
 }
