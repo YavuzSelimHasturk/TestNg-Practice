@@ -144,14 +144,6 @@ public class ReusableMethods {
 
     public static void googleAds() {
         AutomationExercisePage automationExercisePage=new AutomationExercisePage();
-        if (automationExercisePage.iframe1.isDisplayed()){
-            Driver.getDriver().switchTo().frame(automationExercisePage.iframe1);
 
-            if (automationExercisePage.iframe2.isDisplayed()){
-                Driver.getDriver().switchTo().frame(automationExercisePage.iframe2);
-                automationExercisePage.advCloseButon.click();
-                Driver.getDriver().switchTo().defaultContent();
             }
         }
-    }
-}

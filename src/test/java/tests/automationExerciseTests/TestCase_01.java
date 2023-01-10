@@ -1,9 +1,7 @@
 package tests.automationExerciseTests;
 
 import com.github.javafaker.Faker;
-import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
-import org.openqa.selenium.WebElement;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 import pages.AutomationExercisePage;
@@ -11,9 +9,7 @@ import utilities.ConfigReader;
 import utilities.Driver;
 import utilities.ReusableMethods;
 
-import java.util.List;
-
-public class C01_TestCase_1 {
+public class TestCase_01 {
     //Test Case 1: Register User
     //1. Launch browser
     AutomationExercisePage automationExercisePage = new AutomationExercisePage();
@@ -77,6 +73,8 @@ public class C01_TestCase_1 {
 
         //13. Click 'Create Account button'
         automationExercisePage.createAccountButton.click();
+
+        ReusableMethods.bekle(3);
 
         //14. Verify that 'ACCOUNT CREATED!' is visible
         Assert.assertTrue(automationExercisePage.accountCreatedText.isDisplayed());
