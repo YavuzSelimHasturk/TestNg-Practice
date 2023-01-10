@@ -61,6 +61,9 @@ public class AutomationExercisePage {
     @FindBy(xpath = "(//button[@type='submit'])[1]")
     public WebElement loginButon;
 
+    @FindBy(xpath = "//*[text()='Your email or password is incorrect!']")
+    public WebElement incorrecttext;
+
 
     @FindBy(xpath= "//*[@id='dismiss-button']")
     public WebElement advCloseButon;
