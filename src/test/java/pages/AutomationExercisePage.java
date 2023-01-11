@@ -63,6 +63,22 @@ public class AutomationExercisePage {
 
     @FindBy(xpath = "//*[text()='Your email or password is incorrect!']")
     public WebElement incorrecttext;
+    @FindBy(xpath = "//*[text()=' Contact us']")
+    public WebElement contactUsButton;
+    @FindBy(xpath = "//*[text()='Get In Touch']")
+    public WebElement getInTouchText;
+
+    @FindBy(xpath = "//input[@name='name']")
+    public WebElement contactUsNameElementi;
+    @FindBy(xpath = "//input[@name='upload_file']")
+    public WebElement uploadFile;
+    @FindBy(xpath = "//input[@type='submit']")
+    public WebElement submitButton;
+    @FindBy(xpath = "//*[@class='status alert alert-success']")
+    public WebElement successText;
+    @FindBy(xpath = "(//*[text()=' Home'])[2]")
+    public WebElement homeButton;
+
 
 
     @FindBy(xpath= "//*[@id='dismiss-button']")
