@@ -79,6 +79,23 @@ public class AutomationExercisePage {
     @FindBy(xpath = "(//*[text()=' Home'])[2]")
     public WebElement homeButton;
 
+    @FindBy(xpath = "(//*[text()='View Product'])[1]")
+    public WebElement rs500ViewProductElementi;
+
+    @FindBy(xpath = "//*[@class='product-information']")
+    public WebElement productInformation;
+
+    @FindBy(xpath = "//input[@name='quantity']")
+    public WebElement quantity;
+
+    @FindBy(xpath = "//button[@type='button']")
+    public WebElement addToCartButton;
+    @FindBy(xpath = "//*[text()='View Cart']")
+    public WebElement viewCartButton;
+    @FindBy(xpath = "//button[@class='disabled']")
+    public WebElement cartQuantityElementi;
+
+
 
 
     @FindBy(xpath= "//*[@id='dismiss-button']")

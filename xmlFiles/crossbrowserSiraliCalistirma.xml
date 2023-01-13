@@ -4,7 +4,7 @@
     <test name="Cross Browser Chrome ile Calisacak classlar">
         <parameter name="browser" value="chrome"></parameter>
         <classes>
-
+        <class name="tests.automationExerciseTests.TestCase_01"></class>
         </classes>
 
 
@@ -12,7 +12,7 @@
     <test name="Cross Browser Firefox ile calisacak classlar">
         <parameter name="browser" value="firefox"></parameter>
         <classes>
-
+        <class name="tests.automationExerciseTests.TestCase_02"></class>
         </classes>
 
     </test>
