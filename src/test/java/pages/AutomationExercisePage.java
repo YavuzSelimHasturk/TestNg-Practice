@@ -95,7 +95,28 @@ public class AutomationExercisePage {
     @FindBy(xpath = "//button[@class='disabled']")
     public WebElement cartQuantityElementi;
 
+    @FindBy(xpath = "//*[text()=' Products']")
+    public WebElement productsElementi;
 
+    @FindBy(xpath = "//*[text()='All Products']")
+    public WebElement allProductsElementi;
+
+    @FindBy(xpath = "//*[@id='search_product']")
+    public WebElement searchProductElementi;
+    @FindBy(xpath = "//*[@id='submit_search']")
+    public WebElement submitProductButton;
+
+    @FindBy(xpath = "//*[text()='Searched Products']")
+    public WebElement searchedProductSonucElementi;
+
+    @FindBy(xpath = "(//*[text()='Winter Top'])[1]")
+    public WebElement winterTopElementi;
+
+    @FindBy(xpath = "//*[text()='Add to cart']")
+    public WebElement productAddToCartElementi;
+
+    @FindBy(xpath = "//*[text()=' Cart']")
+    public WebElement cartSayfaGidisElementi;
 
 
     @FindBy(xpath= "//*[@id='dismiss-button']")
