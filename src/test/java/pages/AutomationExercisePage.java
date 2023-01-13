@@ -118,6 +118,37 @@ public class AutomationExercisePage {
     @FindBy(xpath = "//*[text()=' Cart']")
     public WebElement cartSayfaGidisElementi;
 
+    @FindBy(xpath = "//*[text()='Shopping Cart']")
+    public WebElement shoppingCart;
+
+    @FindBy(xpath = "//*[text()='Proceed To Checkout']")
+    public WebElement proceedToCheckout;
+
+    @FindBy(xpath = "//button[@data-dismiss='modal']")
+    public WebElement continueShoppingButon;
+
+    @FindBy(xpath = "//*[text()='Register / Login']")
+    public WebElement registerLoginButon;
+
+    @FindBy(xpath = "//*[text()='Address Details']")
+    public WebElement adressDetails;
+
+    @FindBy(xpath = "//*[text()='Review Your Order']")
+    public WebElement reviewYourOrder;
+
+    @FindBy(xpath = "//*[@class='form-control']")
+    public WebElement commentText;
+    @FindBy(xpath = "//*[text()='Place Order']")
+    public WebElement placeOrder;
+
+    @FindBy(xpath = "//button[@id='submit']")
+    public WebElement payAndConfirmOrder;
+
+    @FindBy(xpath = "(//*[@class='alert-success alert'])[1]")
+    public WebElement orderSuccessfullMessage;
+
+    @FindBy(xpath = "//*[text()='Download Invoice']")
+    public WebElement downloadInvoiceButton;
 
     @FindBy(xpath= "//*[@id='dismiss-button']")
     public WebElement advCloseButon;

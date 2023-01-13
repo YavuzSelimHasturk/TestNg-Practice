@@ -47,5 +47,7 @@ public class TestCase_20 {
         automationExercisePage.cartSayfaGidisElementi.click();
         //12. Verify that those products are visible in cart after login as well
         Assert.assertTrue(automationExercisePage.winterTopElementi.isDisplayed());
+
+        Driver.getDriver().close();
     }
 }
